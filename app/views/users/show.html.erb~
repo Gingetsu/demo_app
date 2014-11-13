@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+<%= link_to image_tag("rails.png", alt: "Rails"), 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUP8IXRPlg1lQLQzSywcpmrxgi_JnAfOrH7rk_OyLG-s7Y5p4FI-8i7ei5'%>
+require 'image_suckr'
+suckr = ImageSuckr::GoogleSuckr.new
+suckr.get_image_url({"q" => "car"})
+
+<%= link_to image_tag("index.jpeg", alt: "Kotik"), 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUP8IXRPlg1lQLQzSywcpmrxgi_JnAfOrH7rk_OyLG-s7Y5p4FI-8i7ei5'%>
